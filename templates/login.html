@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
+
 </head>
+
 <body>
-    <video autoplay muted  plays-inline loop >
-        <source src="../Readme_resources/heart-beats-4360.mp4" type="video/mp4">
-      </video>
-	<div class="login-box">
+
+    <div class="login-container">
+        <video autoplay muted plays-inline loop id="video-background">
+            <source src="../static/v2.mp4" type="video/mp4">
+        </video>
+        <form class="login-form" id="login-form">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <div class="login-box">
 		<h2>Login</h2>
 		<form>
 			<div class="user-box">
@@ -30,7 +66,8 @@
 				<span></span>
 				<input type="submit" value="Login">
 			</a>
-		</form>
-	</div>
+		</form> -->
+    </div>
 </body>
+
 </html>

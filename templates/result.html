@@ -17,17 +17,21 @@
 		<div class="container">
             <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
             <div class='description'>
-    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    			<p>A Machine Learning Web App, Built with Flask.</p>
     		</div>
     	</div>
 
 		<!-- Result -->
+		
 		<div class="results">
+			<video autoplay muted plays-inline loop id="video-background">
+				<source src="{{ url_for('static', filename='v2.mp4') }}" type="video/mp4">
+			</video>
 			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Oops! You have Chances of Heart Disease.</span></h1>
+				<h1>Prediction: <span class='danger'>You have Chances of Heart Disease.</span></h1>
 				
 			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! You DON'T chances have Heart Disease.</span></h1>
+				<h1>Prediction: <span class='safe'>You DON'T chances have Heart Disease.</span></h1>
 				
 			{% endif %}
 		</div>
@@ -35,10 +39,9 @@
 		<!-- Footer -->
        <div class='footer'>
            <div class="contact">
-               <a target="_blank" href="https://github.com/asthasharma98/Heart-Disease-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/astha-sharma-47266b11b/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               
            </div>
-           <p class='footer-description'>Made by Astha Sharma.</p>
+           <p class='footer-description'></p>
        </div>
 
 	</body>

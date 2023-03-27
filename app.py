@@ -37,7 +37,10 @@ def predict():
         thal = request.form.get('thal')
         
         data = np.array([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]])
+        print([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
+        print(data)
         my_prediction = model.predict(data)
+        print(my_prediction)
         
         return render_template('result.html', prediction=my_prediction)
         

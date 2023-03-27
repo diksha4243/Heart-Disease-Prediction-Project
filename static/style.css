@@ -162,76 +162,73 @@ label {
 	color: green;
 }
 
-/* body {
-	margin: 0;
-	padding: 0;
-	background: #f2f2f2;
-	font-family: sans-serif;
-} */
 
-.login-box {
-	width: 320px;
-	height: 420px;
-	background: #fff;
-	color: #000;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	box-sizing: border-box;
-	padding: 70px 30px;
-}
-
-h2 {
-	margin: 0;
-	padding: 0 0 20px;
+.login-container {
+	max-width: 400px;
+	/* margin: 0 auto; */
+	margin-top: 10%;
+	margin-left: 2%;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form h1 {
 	text-align: center;
-	font-size: 22px;
-}
-
-.login-box input[type="email"],
-.login-box input[type="tel"],
-.login-box input[type="text"] {
-	width: 100%;
 	margin-bottom: 20px;
-	border: none;
-	border-bottom: 1px solid #000;
-	background: transparent;
-	outline: none;
-	height: 40px;
-	color: #000;
-	font-size: 16px;
-}
-
-.login-box label {
-	font-size: 16px;
-	color: #000;
-}
-
-.login-box input[type="submit"] {
-	border: none;
-	outline: none;
-	height: 40px;
+  }
+  
+  .form-group {
+	margin-bottom: 10px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  input[type="checkbox"] {
+	margin-right: 5px;
+  }
+  
+  button[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
 	color: #fff;
-	font-size: 16px;
-	background: #000;
+	border: none;
+	border-radius: 5px;
 	cursor: pointer;
-	border-radius: 20px;
-	margin-top: 20px;
-}
-
-.login-box input[type="submit"]:hover {
-	background: #2ecc71;
-	color: #fff;
-}
-
-.login-box a {
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #3e8e41;
+  }
+  
+  .register,
+  .forgot-password {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  .register a,
+  .forgot-password a {
+	color: #4CAF50;
 	text-decoration: none;
-	font-size: 16px;
-	line-height: 20px;
-	color: darkgrey;
-}
-
-.login-box a:hover {
-	color: #2ecc71;
-}
+  }
+  
+  .register a:hover,
+  .forgot-password a:hover {
+	text-decoration: underline;
+  }
